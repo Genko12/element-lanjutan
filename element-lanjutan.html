@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halaman HTML Lanjutan</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+    h1 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 32px;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+    form {
+      background: #f8f9fa;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      max-width: 400px;
+      margin: 0 auto 30px auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #007bff;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 16px;
+      border: 1px solid #bcdffb;
+      border-radius: 6px;
+      font-size: 15px;
+      background: #f4fbff;
+      transition: border 0.2s;
+    }
+    input[type="text"]:focus, input[type="email"]:focus {
+      border: 1.5px solid #007bff;
+      outline: none;
+    }
+    button {
+      background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%);
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      transition: background 0.2s;
+    }
+    button:hover {
+      background: linear-gradient(90deg, #0056b3 60%, #007bff 100%);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #f8f9fa;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #e3e3e3;
+      font-size: 15px;
+    }
+    th {
+      background: linear-gradient(90deg, #007bff 60%, #00c6ff 100%);
+      color: #fff;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    tr:hover {
+      background: #eaf6ff;
+      transition: background 0.2s;
+    }
+    hr {
+      margin: 30px 0;
+      border: none;
+      border-top: 1.5px dashed #bcdffb;
+    }
+    video, audio, iframe {
+      display: block;
+      margin: 0 auto 30px auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      border-radius: 10px;
+      background: #fff;
+    }
+    .copyright {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      margin-top: 40px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Halaman HTML Lanjutan</h1>
+    <form>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">Submit</button>
+    </form>
+    <hr>
+
+    <table>
+      <tr>
+        <th>Nama</th>
+        <th>Kelas</th>
+      </tr>
+      <tr>
+        <td>Andi</td>
+        <td>10A</td>
+      </tr>
+      <tr>
+        <td>Budi</td>
+        <td>10B</td>
+      </tr>
+      <tr>
+        <td>Citra</td>
+        <td>10A</td>
+      </tr>
+      <tr>
+        <td>Dewi</td>
+        <td>10C</td>
+      </tr>
+      <tr>
+        <td>Eko</td>
+        <td>10B</td>
+      </tr>
+    </table>
+    <hr>
+
+    <video width="320" height="240" controls>
+      <source src="video.mp4" type="video/mp4">
+      Browser Anda tidak mendukung tag video.
+    </video>
+    <hr>
+
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Browser Anda tidak mendukung tag audio.
+    </audio>
+    <hr>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0v3NxiLfISQ?si=G5sGtKAZcKHAub4F" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <iframe width="560" height="315" src="https://id.wikipedia.org/wiki/HTML" title="Wikipedia HTML"></iframe>
+    <div class="copyright">
+      &copy; 2025 Irfan 12-rpl. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
